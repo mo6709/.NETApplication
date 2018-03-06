@@ -1,0 +1,29 @@
+﻿@{ ViewBag.Title = "REST API";}
+<div id="body">
+
+    <section class="featured">
+
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>Welcome to ASP.NET Web API!</h1>
+                
+            </hgroup>
+            
+        </div>
+
+    </section>
+
+    <section class="content-wrapper main-content clear-fix">
+
+        <h2>@ViewBag.Message</h2>
+
+        <form action="@Url.Action("SendRestRequest", "Home")" method="post" target="_blank" onsubmit="">
+            latitude:<br>
+            <input type="text" name="Latitude" value=""><br>
+            longitude:<br><br>
+            <input type="text" name="Longitude" value=""><br><br>
+            <input type="submit" value="Send REST Requst">
+        </form>
+              
+    </section>
+</div>
